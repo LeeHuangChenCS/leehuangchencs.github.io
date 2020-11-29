@@ -1,0 +1,32 @@
+
+
+.page {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 450%;
+    border-radius: 5px;
+}
+.container {
+    text-align: center;
+}
+
+.form {
+    display: inline-block;
+    width: 20%;
+    margin: 50px auto;
+    font-family: Arial;
+    border-radius: 5px;
+    background-color: aquamarine;
+    border:solid;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+    }
+}

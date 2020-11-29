@@ -1,0 +1,62 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Color Morphing Clock by Lee Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+    <div id="clock" class="page">
+        <p id="display">test</p>
+    </div>
+    <div class="container">
+        <div id="6amCont" class="form">
+            <form id="6amForm">
+                <strong id="6amLab">Color for 6am:</strong><br />
+                <input id="h" type="range" max="360" value="15" 
+                       onchange="updateContainerColor('6amCont', '6amForm', '6amLab')" /><br />
+                <input id="s" type="range" max="100" 
+                       onchange="updateContainerColor('6amCont','6amForm', '6amLab')" /><br />
+                <input id="l" type="range" max="100" 
+                       onchange="updateContainerColor('6amCont','6amForm', '6amLab')" /><br />
+            </form>
+        </div>
+        <div id="12pmCont" class="form">
+            <form id="12pmForm">
+                <strong id="12pmLab">Color for 12pm:</strong><br />
+                <input id="h" type="range" max="360" value="54"
+                       onchange="updateContainerColor('12pmCont', '12pmForm', '12pmLab')" /><br />
+                <input id="s" type="range" max="100" value="100"
+                       onchange="updateContainerColor('12pmCont','12pmForm', '12pmLab')" /><br />
+                <input id="l" type="range" max="100" value="75"
+                       onchange="updateContainerColor('12pmCont','12pmForm', '12pmLab')" /><br />
+            </form>
+        </div>
+        <div id="6pmCont" class="form">
+            <form id="6pmForm">
+                <strong id="6pmLab">Color for 6pm:</strong><br />
+                <input id="h" type="range" max="360" value="240" 
+                       onchange="updateContainerColor('6pmCont', '6pmForm', '6pmLab')" /><br />
+                <input id="s" type="range" max="100" 
+                       onchange="updateContainerColor('6pmCont','6pmForm', '6pmLab')" /><br />
+                <input id="l" type="range" max="100" value="30"
+                       onchange="updateContainerColor('6pmCont','6pmForm', '6pmLab')" /><br />
+            </form>
+        </div>
+        <div id="12amCont" class="form">
+            <form id="12amForm">
+                <strong id="12amLab">Color for 12am:</strong><br />
+                <input id="h" type="range" max="360" value="240" 
+                       onchange="updateContainerColor('12amCont', '12amForm', '12amLab')" /><br />
+                <input id="s" type="range" max="100" 
+                       onchange="updateContainerColor('12amCont','12amForm', '12amLab')" /><br />
+                <input id="l" type="range" max="100" value="10"
+                       onchange="updateContainerColor('12amCont','12amForm', '12amLab')" /><br />
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
