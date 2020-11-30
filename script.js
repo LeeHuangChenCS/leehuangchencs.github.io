@@ -46,7 +46,9 @@ function ChangeHue(iHr, iMin, iSec) {
     var l = curColElm(iHr, iMin, iSec, "l")
     document.body.style.backgroundColor = hsl(h, s, l);
     document.getElementById("clock").style.backgroundColor = hsl(h, s, 95);
-    document.getElementById("display").style.color = hsl(h, s, 15);
+    document.getElementById("clock").style.color = hsl(h, s, 15);
+    document.getElementById("psa").style.backgroundColor = hsl(h, s, 95);
+    document.getElementById("psa").style.color = hsl(h, s, 15);
 }
 
 function updateContainerColor(sContainer, sFormID, sLabID) {

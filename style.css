@@ -12,7 +12,17 @@
     text-align: center;
 }
 
-.form {
+#psa {
+    width: 70%;
+    margin: 25px auto;
+    font-family: Arial;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 120%;
+    padding: 10px;
+}
+
+.box {
     display: inline-block;
     width: 20%;
     margin: 50px auto;
@@ -26,7 +36,11 @@
     .page {
         width: 100%;
     }
-    .form {
-        width: 100%;
+    .box {
+        width: 70%;
+        margin: 10px auto;
+    }
+    #psa {
+        width: 80%;
     }
 }
