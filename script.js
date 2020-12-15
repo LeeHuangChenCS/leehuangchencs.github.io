@@ -6,7 +6,7 @@ function hsl(h, s, l) {
 
 function pastLabel(iHr) {
     if (iHr < 6) { return "12amForm" }
-    if (iHr < 12) { return "6pmForm" }
+    if (iHr < 12) { return "6amForm" }
     if (iHr < 18) { return "12pmForm" }
     return "6pmForm"
 }
